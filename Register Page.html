@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="shortcut icon" href="">
+
+    <title>Sign up</title>
+    
+</head>
+<body>
+<div class="container"> 
+    <p>Sign up</p>
+    <div class="inputs">
+    <form action="" method="post" >
+
+        <input type="text" name="isim" class="name" placeholder="Name" required oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="setCustomValidity('')">
+        <input type="text" name="soy_isim" class="lastname" placeholder="Lastname" required oninvalid="this.setCustomValidity('Please Enter Your Lastname')" oninput="setCustomValidity('')">
+        <input type="text" name="kullanici_adi" class="useranme" placeholder="username" required oninvalid="this.setCustomValidity('Please Enter Your Username')" oninput="setCustomValidity('')">
+        <input type="eposta" name="eposta" class="eposta" placeholder="Email" required oninvalid="this.setCustomValidity('Please Enter Your Email')" oninput="setCustomValidity('')">
+        <input type="number" name="numara" class="number" placeholder="Number" required oninvalid="this.setCustomValidity('Please Enter Your Number')" oninput="setCustomValidity('')">
+        <input type="password" name="passw1" class="sifre1" placeholder="Password" required oninvalid="this.setCustomValidity('Please Enter Your Password')" oninput="setCustomValidity('')">
+        <input type="password" name="passw2" class="sifre2" placeholder="Confirm Password" required oninvalid="this.setCustomValidity('Please Enter Your Confirmation Password')" oninput="setCustomValidity('')">
+        <div class="gender">
+          <span class="maleSpan"><input type="radio" class="erkek" name="Erkek">Erkek</span>
+          <span class="femaleSpan"><input type="radio" class="kadin" name="Erkek">Kadın</span>
+        </div>
+       <div class="buttons">
+       <button type="submit" class="onayla">Sign Up</button>
+        <button type="reset" class="temizle">Reset</button>
+       </div>
+       <div class="alreadyhaveaccount">
+        <label for="">Already Have a Account <a href="">Sign in</a></label>
+       </div>
+    </form>
+    </div>
+
+</div>
+</body>
+</html>
